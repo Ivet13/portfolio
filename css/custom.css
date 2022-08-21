@@ -6,3 +6,9 @@ social media icons
 font-size: 2rem;
 
 }
+
+body{
+    background-image: url('/img/background.jpg');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
