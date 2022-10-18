@@ -16,4 +16,5 @@ body{
     background-repeat:no-repeat;
     background-size:cover;
     background-color: #2f2828a3;
+    background-attachment: fixed;
 }
