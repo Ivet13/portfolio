@@ -103,24 +103,36 @@
         <button type="button" class="btn btn-link"><a href="https://www.linkedin.com/in/iveta-karailievova-500185125/" 
           title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin text-bg-dark" role="img" aria-label="Linkedin"></i></a></button>
        
-        <button type="button" class="btn btn-link js-modal-trigger" data-target="modal-js-example"><a href="#"> <i class="bi bi-envelope-fill text-bg-dark" role="img" aria-label="Mail"></i></a></button>
+        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal> <i class="bi bi-envelope-fill text-bg-dark" role="img" aria-label="Mail"></i></button>
 
       </div>
 
       </main>
     
       <footer class="mt-auto text-white-50">
-        <p>Personal webpage <a href="" class="text-white">Iveta Karailievova @ 2022</a></p>
+        <p>Personal webpage <a href="" class="text-white">Iveta Karailievova @ 2023</a></p>
       </footer>
     </div>
 
-    <div id="modal-js-example" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-        <!-- Any other Bulma elements you want -->
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
+  </div>
+</div>
 
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
