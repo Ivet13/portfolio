@@ -99,9 +99,9 @@ function myFunction() {
   var copyText = document.getElementById("myInput");
 
   // Copy the text inside the text field
-  navigator.clipboard.writeText( copyText.innerHTML.value);
+  navigator.clipboard.writeText( copyText.innerHTML);
 
   // Alert the copied text
-  alert("Copied the text: " +  copyText.innerHTML.value);
+  alert("Copied the text: " +  copyText.innerHTML);
   
 }
