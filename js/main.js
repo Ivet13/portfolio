@@ -56,7 +56,7 @@ document.addEventListener(
       closeAllModals();
     }
   });
-});
+
 
 function copyToClipBoard() {
   // Get the element
@@ -66,3 +66,15 @@ function copyToClipBoard() {
   navigator.clipboard.writeText( copyText.innerHTML);
   
 }
+
+var myTooltipEl = document.getElementById('copy')
+var tooltip = new bootstrap.Tooltip(myTooltipEl,{
+  trigger:'click',
+  delay: {show: 500, hide: 100}
+})
+
+myTooltipEl.addEventListener('click', function () {
+  setTimeout(tooltip.hide(),500);
+})
+
+
